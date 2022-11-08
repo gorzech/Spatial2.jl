@@ -1,0 +1,13 @@
+name = "Spatial2"
+uuid = "3bf7e6cc-3575-45d0-951e-86cb93f2072d"
+authors = ["contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
