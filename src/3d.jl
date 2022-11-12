@@ -74,7 +74,7 @@ function Etoq(E)
     q / norm(q)
 end
 
-function qd = rqd(in1, in2)
+function rqd(in1, in2)
     # rqd  derivative of unit quaternion from angular velocity
     # qd=rqd(wA,q) and qd=rqd(q,wB) calculate the derivative of a unit
     # quaternion, q, representing the orientation of a coordinate frame B
@@ -108,7 +108,7 @@ function qd = rqd(in1, in2)
             q[4] q[3] -q[2] q[1]]
     end
 
-    qd = 0.5 * Q * [Kstab * norm(w) * (1 - norm(q)); w]
+    0.5 * Q * [Kstab * norm(w) * (1 - norm(q)); w]
 end
 
 function rv(vm)
